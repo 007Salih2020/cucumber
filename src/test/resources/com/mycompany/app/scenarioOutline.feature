@@ -6,7 +6,6 @@ Feature: Background Feature
     And I get paid
 
 
-@Hello  @SPEL-3
   Scenario Outline: <which> Hello
     Given I have "<what>" task
     And Step from "<which> Hello" in "Background Feature" feature file
