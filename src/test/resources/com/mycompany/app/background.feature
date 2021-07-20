@@ -11,7 +11,7 @@ Feature: Background Feature
     When I attempt to solve it
     Then I surely succeed
 
-  @smoke
+  
   Scenario: Second Hello
     Given I have "second" task
     And Step from "Second Hello" in "Background Feature" feature file
