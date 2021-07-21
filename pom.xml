@@ -59,6 +59,7 @@
                 </configuration>
             </plugin>
          </plugins>
+       </build>
         <resources>
             <!--If the pro and xml files are placed in the source java package, they also need to be compiled-->
             <resource>
@@ -69,5 +70,5 @@
                 </includes>
                 <filtering>false</filtering>
             </resource>         
-        </build>
+        
     </project>
