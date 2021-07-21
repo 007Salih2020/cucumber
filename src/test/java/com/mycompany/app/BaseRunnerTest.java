@@ -5,7 +5,13 @@ import cucumber.api.junit.Cucumber;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(format = {"json:**/cucumber.json"})
+@CucumberOptions(
+                plugin ={"json:**/cucumber.json"}, 
+                features = {"resource/***.feature"},
+                glue = {"com.mycompany.app.steps" },
+                tags= {"@hello", "@regression"}
+)
+
 
 public class BaseRunnerTest {
 
