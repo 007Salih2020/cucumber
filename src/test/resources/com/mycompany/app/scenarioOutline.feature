@@ -1,5 +1,6 @@
 Feature: Background Feature
 
+@hello
   #Here you repeat tests with different data
   Background: I have a job
     Given The job is nice
