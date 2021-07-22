@@ -9,7 +9,7 @@ node() {
 			echo"Workspace set to:"+env.WORKSPACE_LOCAL
 		}
 		stage('Checkout Self'){
-		git branch:'cucumber',credentialsId:'',url:repoURL
+		git branch:'master',credentialsId:'',url:repoURL
 		}
 		stage('Cucumber Tests'){
 			withMaven(maven:'maven363'){
