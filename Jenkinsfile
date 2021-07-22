@@ -36,12 +36,16 @@ node() {
 
 
 
-        step([$class: 'XrayImportBuilder', endpointName: '/cucumber/multipart', importFilePath: 'target\\cucumber.json', importInParallel: 'false', importInfo: '''environment = "TEST"
-        testExecutionFieldId = 10202
-        testEnvironmentFieldName =10125
-        projectKey ="SPEL"
-        xrayConnectorId= \'cf8f2169-00d6-4f95-9ec3-7fd75314c344\'
-        labels
-        description''', inputInfoSwitcher: 'fileContent', serverInstance: 'SERVER-cf8f2169-00d6-4f95-9ec3-7fd75314c344'])
+      step([$class: 'XrayImportBuilder', endpointName: '/cucumber/multipart',
+                importFilePath: '**/cucumber.json',
+                importInParallel: 'false',
+                importInfo: '''
+                projectKey=SPEL
+                testExecutionFieldId=10202
+                customfield=10125
+                labels= "automated_regression", "regression"
+                environment= DEV1
+                ''',
+            inputInfoSwitcher: 'fileContent', serverInstance: 'SERVER-cf8f2169-00d6-4f95-9ec3-7fd75314c344'])
     }
 }
