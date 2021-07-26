@@ -73,11 +73,11 @@
                  <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.0.0-M5</version>
                  <configuration>
-                        <!-- <testFailureIgnore>true</testFailureIgnore>  -->
-                        <trimStackTrace>false</trimStackTrace>
-                        <suiteXmlFiles>
+                        <testFailureIgnore>true</testFailureIgnore>
+                       <!--  <trimStackTrace>false</trimStackTrace>  -->
+                      <!--  <suiteXmlFiles>  -->
                          <!--        <suiteXmlFile>testng.xml</suiteXmlFile>  -->
-                         </suiteXmlFiles>
+                       <!--  </suiteXmlFiles>  -->
                 </configuration>
             </plugin>
          </plugins>       
