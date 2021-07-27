@@ -2,7 +2,6 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name=" ">
     <test thread-count="5" name="Test">
-
         <classes>
             <!-- <class name="com-mycompany.app.BaseRunnerTest.java" ></class>   -->
         </classes>
@@ -10,7 +9,7 @@
         <parameter name="testInterfaceXML" value="SearchInterface.xml"></parameter>
         <parameter name="testSuiteXML" value="SearchTest.xml"></parameter>
         <packages>
-            <package name="com.mycompany.app.BaseRunnerTest" />
+            <package name="com.mycompany.app" />
         </packages>
 
     </test>
