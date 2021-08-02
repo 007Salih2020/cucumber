@@ -7,7 +7,7 @@ Feature: Background Feature
     And I get paid
 
 
-  Scenario Outline: <which> Hello
+Scenario Outline: <which> Hello
     Given I have "<what>" task
     And Step from "<which> Hello" in "Background Feature" feature file
     When I attempt to solve it

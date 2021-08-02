@@ -8,14 +8,13 @@ import org.testng.annotations.DataProvider;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        strict = true,
-        plugin ={"json:target/cucumber.json"},
-        features= {"src/test/resources/com/mycompany/app/"},
-        glue = { "com.mycompany.app.steps" }
+     strict = true,
+     plugin ={"json:target/cucumber.json"},
+     features= {"src/test/resources/com/mycompany/app/"},
+     glue = { "com.mycompany.app.steps" } )
        //  plugin = {"pretty", "html:target/cucumber-html-report", "json:target/cucumber.json"}
-            )
+
 
 public class BaseRunnerTest {
-
 
 }

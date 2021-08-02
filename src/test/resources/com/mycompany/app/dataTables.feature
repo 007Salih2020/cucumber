@@ -1,7 +1,7 @@
  Feature: Data Tables Feature
-  #here you pack data into a complex structure as test argument
+  #here you pack data into a complex structure as test argume
 
-@SPEL-3
+
 Scenario: First Hellol
     Given I have "first" task
     And Step from "First Hello" in "Data Tables Feature" feature file
