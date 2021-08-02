@@ -1,8 +1,8 @@
-Feature: Data Tables Feature
+ Feature: Data Tables Feature
   #here you pack data into a complex structure as test argument
-  
 
-  Scenario: First Hellol
+@SPEL-3
+Scenario: First Hellol
     Given I have "first" task
     And Step from "First Hello" in "Data Tables Feature" feature file
     When I attempt to solve it

@@ -1,10 +1,9 @@
 Feature: Background Feature
 
-
+  @SPEL-2
   Background: I have a job
     Given The job is nice
     And I get paid
-
   Scenario: First Hello
     Given I have "first" task
     And Step from "First Hello" in "Background Feature" feature file
