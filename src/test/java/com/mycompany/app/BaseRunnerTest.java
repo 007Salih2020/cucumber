@@ -7,7 +7,7 @@ import org.testng.annotations.DataProvider;
 
 
 @RunWith(Cucumber.class)
-@CucumberOptions( plugin= {"json:target/cucumber.json"})    // tags= {"hello","@SPEL-1"})
+@CucumberOptions( plugin= {"json:target/cucumber.json"} )   //, tags= {"@SPEL"})
    //   strict = true,
    //   plugin ={"json:target/cucumber.json"},
     //  features= {"src/test/resources/com/mycompany/app/"},
